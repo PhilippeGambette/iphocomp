@@ -1,3 +1,7 @@
+body{
+  font-family:'calibri';
+}
+
 #container{
   margin:0 auto;
   width:800px;
@@ -26,17 +30,17 @@
   margin:10px;
   padding-top:40px;
   font-size:32px;
-  font-family:'gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;
+  font-family:'calibri', 'gill-sans','Gill Sans', 'Gill Sans MT', 'arial', 'verdana', sans-serif;
 }
 
 h1{
-  font-family:'gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;
+  font-family:'calibri', 'gill-sans','Gill Sans', 'Gill Sans MT', 'arial', 'verdana',sans-serif;
   font-size:16pt;
   margin-bottom:0px;
 }
 
 h2{
-  font-family:'gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;
+  font-family:'calibri', 'gill-sans','Gill Sans', 'Gill Sans MT', 'verdana',sans-serif;
   font-size:14pt;
   margin-bottom:0px;
 }

@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="favicon.ico" />
 </head>
 
-<body style="padding:10px;margin:10px;text-align:justify;font-family:'gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;"> 
+<body style="padding:10px;margin:10px;text-align:justify;"> 
 <!--
 Copyright 2014 - Hyeran Lee-Jean, Philippe Gambette
 
@@ -65,11 +65,12 @@ agenda
 samedi
 vis
 JEP</textarea><br/>
-<INPUT type="submit" value="Calculer l'indice de complexité phonétique !" style="font-size:16px;font-family:'gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;">
+<INPUT type="submit" value="Calculer l'indice de complexité phonétique !" style="font-size:16px;font-family:'calibri', 'gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;">
 <br/>
 <i>Si vous souhaitez utiliser des <b>transcriptions phonétiques personnalisées</b>,
-merci de les ajouter dans le cadre de texte ci-dessous, elles seront <b>prioritaires</b>
-par rapport aux transcriptions de la base de données utilisée par iPhocomp :</i><br/>
+merci de les ajouter dans le cadre de texte ci-dessous (en utilisant les
+<a href="http://www.lexique.org/outils/Manuel_Lexique.htm#_Toc108519023">codes phonémiques de Lexique 3</a>),
+elles seront <b>prioritaires</b> par rapport aux transcriptions de la base de données utilisée par iPhocomp :</i><br/>
 <textarea rows="6" cols="95" name="transcriptions">
 iphocomp;ifok§p
 vis;vis
@@ -80,12 +81,12 @@ vis;vis
 <div style="clear:both;background-color:white;padding:0px;padding-top:10px;padding-bottom:1px;">
 <p>
 <h1>&Agrave; propos d'iPhocomp</h1>
-Si vous utilisez iPhocomp, merci de citer cette référence : <br/>
-<span style="background-color:#CCCCCC;">Lee H.-R., Gambette P. (2014), <a href="2014LeeGambette.pdf">iPhocomp :
-calcul automatique de l’indice de complexité phonétique de Jakielski</a>, manuscrit.</span>
+Si vous utilisez iPhocomp (version 1.1 du 12/03/2019), merci de citer cette référence : <br/>
+<span style="background-color:#CCCCCC;">Lee H.-R., Gambette P., Barkat-Defradas M. (2014), <a href="https://hal.archives-ouvertes.fr/hal-01277047">iPhocomp :
+calcul automatique de l’indice de complexité phonétique de Jakielski</a>, session posters des XXXèmes Journées d'Etudes de la Parole (JEP 2014).</span>
 <br/>
-iPhocomp est un logiciel libre selon la licence GPL3. Vous pouvez le télécharger
-<a href="iPhocomp.zip">dans ce fichier Zip</a>. Si vous le réutilisez,
+iPhocomp est un logiciel libre selon la licence GPLv3. Vous pouvez le télécharger
+<a href="https://github.com/PhilippeGambette/iphocomp">ici</a>. Si vous le réutilisez,
 nous vous invitons à faire un lien vers ce site web à l'endroit de l'interface
 où vous évoquez la propriété intellectuelle.
 </p>
@@ -107,7 +108,7 @@ Il utilise également le package PHP <a href="http://pear.php.net/package/Number
 pour transcrire en français les nombres écrits sous forme de chiffres.
 </p>
 </div>
-<div style="clear:both;text-align:center;margin-top:20px;"><small>&copy; 2014 - <a href="http://www.praxiling.fr/lee-hyeran.html">Hyeran Lee-Jean</a>, <a href="http://igm.univ-mlv.fr/~gambette/">Philippe Gambette</a> - Logo by Pierre Jean</small></div>
+<div style="clear:both;text-align:center;margin-top:20px;"><small>&copy; 2014 - <a href="https://www.traduction-coreen.com/">Hyeran Lee-Jean</a>, <a href="http://igm.univ-mlv.fr/~gambette/">Philippe Gambette</a> - Logo by Pierre Jean</small></div>
 </div>
 </body>
 </html>

@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" media="screen" title="Style" href="style.css">
   <link rel="icon" type="image/png" href="favicon.ico" />
   <script type="text/javascript"> 
-  function aff(objet){ 
+  function affiche(objet){ 
   document.getElementById(objet).style.display = "block";
   } 
   function cache(objet){ 
@@ -14,18 +14,18 @@
   } 
   function cacheTableau(){
   cache('tableau');
-  aff('affichage');
+  affiche('affichage');
   }
-  function affTableau(){
-  aff('tableau');
+  function afficheTableau(){
+  affiche('tableau');
   cache('affichage');
   }
   </script> 
 </head>
 
-<body style="padding:10px;margin:10px;text-align:justify;font-family:'gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;"> 
+<body style="padding:10px;margin:10px;text-align:justify;font-family:'calibri','gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;"> 
 <!--
-Copyright 2014 - Hyeran Lee-Jean, Philippe Gambette
+Copyright 2014-2019 - Hyeran Lee-Jean, Philippe Gambette
 
 This file is part of iPhocomp.
 
@@ -63,6 +63,14 @@ if(isset($_POST['texte'])){
    $texte="iPhocomp";
 }
 
+if(isset($_POST['transcriptions'])){
+   $transcriptions=$_POST['transcriptions'];
+   //echo $texte;
+} else {
+   $transcriptions = "";
+}
+
+
 
 //regular expression to convert a 2-column CSV file into a PHP array
 //(.*)\t(.*)
@@ -82,8 +90,8 @@ include 'DicoPhon.php';
 include 'iPhocomp_functions.php';
 
 //Phonetic dictionary preprocessing:
-
 $plines = preg_split("/((\r?\n)|(\r\n?))/", $transcriptions);
+//var_dump($transcriptions);
 
 $nbTrans=0;
 foreach($plines as $key => $line){
@@ -452,7 +460,7 @@ foreach($lines as $key => $line){
 
 echo "</table><br/></div>\n";
 
-echo "<table border=1px id=\"tableau\">";
+echo "<table border=1px id=\"tab\">";
 echo "<tr><th>Param. 1</th><th>Param. 2</th><th>Param. 3</th><th>Param. 4</th><th>Param. 5</th><th>Param. 6</th><th>Param. 7</th><th>Param. 8</th><th>IPC</th></tr>";
   echo "<tr>
   <th>".(round($paramSum[0]/$nbRecognizedWords,3))."</th>
@@ -468,7 +476,7 @@ echo "<tr><th>Param. 1</th><th>Param. 2</th><th>Param. 3</th><th>Param. 4</th><t
 echo "</table>\n";
 
 
-echo "<div id=\"affichage\"><a href=\"javascript:affTableau();\"><i>Afficher les résultats détaillés</i></a></div>";
+echo "<div id=\"affichage\"><a href=\"javascript:afficheTableau();\"><i>Afficher les résultats détaillés</i></a></div>";
 
 echo "\n";
 $timeEnd=microtime();
@@ -549,7 +557,7 @@ pour la charger ensuite lors de l'envoi du texte, afin qu'elle soit prise en com
 <!--<span style=\"color:red;font-weight:bold;\">(attention, cette fonction n'est actuellement pas disponible !).</span>-->
 Une tentative de transcription automatique basique, qui nécessite une relecture attentive, est donnée sur chaque ligne.";
 echo "<form name=\"input\" action=\"iPhocomp_addWords.php\" method=\"post\">";
-echo "<textarea style=\"font-family:'gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;\" rows=\"20\" cols=\"50\" name=\"newWords\">";
+echo "<textarea style=\"font-family:'calibri', 'gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;\" rows=\"20\" cols=\"50\" name=\"newWords\">";
 foreach($notRecognizedWords as $key => $word){
   echo $word.";".phonetic($word)."\n";
 }
@@ -560,9 +568,9 @@ echo "</textarea></form>";
 <h1>&Agrave; propos de ces résultats</h1>
 Le fonctionnement d'iPhocomp et les règles de calcul de l'indice
 de complexité phonétique et des 8 paramètres qui le composent sont
-détaillés <a href="2014LeeGambette.pdf">dans cet article de présentation</a>.
+détaillés <a href="https://hal.archives-ouvertes.fr/hal-01277047">dans cet article de présentation</a>.
 Pour en savoir plus, vous pouvez contacter
-<a href="http://www.praxiling.fr/lee-hyeran.html">Hyeran Lee-Jean</a>.
+<a href="https://www.traduction-coreen.com/">Hyeran Lee-Jean</a>.
 </p>
 
 </div>

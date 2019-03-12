@@ -29,7 +29,6 @@ This file is part of iPhocomp.
     along with iPhocomp.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-
 //definition of $dicoPhon (phonetic transcription of the word)
 //and of $dicoHomog (list of words which have homographs which
 //are not homonyms)
