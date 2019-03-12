@@ -1,0 +1,42 @@
+#container{
+  margin:0 auto;
+  width:800px;
+}
+
+#topLogo{
+  position:relative;
+  width:280px;
+  margin:0px;
+  padding:0px;
+  float:left;
+}
+
+#topBar{
+  position:relative;
+  float:left;
+  margin:10px;
+  height:130px;
+  width:5px;
+  background-color:#000000;
+}
+
+#topTitle{
+  position:relative;
+  float:left;
+  margin:10px;
+  padding-top:40px;
+  font-size:32px;
+  font-family:'gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;
+}
+
+h1{
+  font-family:'gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;
+  font-size:16pt;
+  margin-bottom:0px;
+}
+
+h2{
+  font-family:'gill-sans','Gill Sans', 'Gill Sans MT',sans-serif;
+  font-size:14pt;
+  margin-bottom:0px;
+}
