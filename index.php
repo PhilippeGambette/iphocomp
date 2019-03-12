@@ -9,7 +9,7 @@
 
 <body style="padding:10px;margin:10px;text-align:justify;"> 
 <!--
-Copyright 2014 - Hyeran Lee-Jean, Philippe Gambette
+Copyright 2014-2019 - Hyeran Lee-Jean, Philippe Gambette
 
 This file is part of iPhocomp.
 
@@ -108,7 +108,7 @@ Il utilise également le package PHP <a href="http://pear.php.net/package/Number
 pour transcrire en français les nombres écrits sous forme de chiffres.
 </p>
 </div>
-<div style="clear:both;text-align:center;margin-top:20px;"><small>&copy; 2014 - <a href="https://www.traduction-coreen.com/">Hyeran Lee-Jean</a>, <a href="http://igm.univ-mlv.fr/~gambette/">Philippe Gambette</a> - Logo by Pierre Jean</small></div>
+<div style="clear:both;text-align:center;margin-top:20px;"><small>&copy; 2014-2019 - <a href="https://www.traduction-coreen.com/">Hyeran Lee-Jean</a>, <a href="http://igm.univ-mlv.fr/~gambette/">Philippe Gambette</a> - Logo by Pierre Jean</small></div>
 </div>
 </body>
 </html>
