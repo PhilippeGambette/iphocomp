@@ -22,8 +22,8 @@ Il utilise les transcriptions phonétiques extraites de la base de données Lexi
 
 Le code source d'iPhocomp est fourni selon la licence GPLv3.
 
-Code : Hyeran Lee-Jean et Philippe Gambette
-Logo : Pierre Jean
+* Code : Hyeran Lee-Jean et Philippe Gambette
+* Logo : Pierre Jean
 
 Si vous utilisez iPhocomp dans une publication scientifique, merci de citer la référence Lee H.-R., Gambette P., Barkat-Defradas M. (2014), iPhocomp : calcul automatique de l’indice de complexité phonétique de Jakielski, session posters des XXXe Journées d'Etudes de la Parole (JEP 2014).
 
